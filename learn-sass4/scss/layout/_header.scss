@@ -1,0 +1,34 @@
+.header {
+  background-color: $dark-color;
+  padding: $spacing-md $spacing-lg;
+
+  .nav {
+    @include flex-center(row, space-between, center);
+
+    &__logo {
+      font-size: $font-subtitle;
+      color: $white;
+      font-weight: bold;
+    }
+
+    &__menu {
+      display: flex;
+      gap: $spacing-md;
+      list-style: none;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+  }
+}

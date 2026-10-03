@@ -1,0 +1,24 @@
+.stats {
+  padding: $spacing-lg;
+  background-color: $primary-color;
+  color: $white;
+  @include flex-center(row, space-around, center);
+
+  @include mobile {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__item {
+    text-align: center;
+
+    &-number {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    &-label {
+      font-size: $font-body;
+    }
+  }
+}
