@@ -1,0 +1,15 @@
+@use 'components';
+
+body {
+  font-family: Arial, sans-serif;
+  color: components.$text-color;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
